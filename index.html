@@ -23,6 +23,13 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+  #ts1 {
+    max-width: 500px;
+    height: 15px;
+    background-color: powderblue;
+  }
+  </style>
 
   <!-- =======================================================
     Theme Name: DevFolio
@@ -85,7 +92,7 @@
     </div>
   </div>
   <!--/ Intro Skew End /-->
-
+  
   <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
@@ -111,12 +118,12 @@
                 </div>
                 <div class="skill-mf">
                   <p class="title-s">Skill</p>
-                  <span>C++</span> <span class="pull-right">85%</span>
+                  <span>Python</span> <span class="pull-right">85%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
                       aria-valuemax="100"></div>
                   </div>
-                  <span>Python</span> <span class="pull-right">80%</span>
+                  <span>C++</span> <span class="pull-right">80%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0"
                       aria-valuemax="100"></div>
@@ -140,20 +147,17 @@
                       About me
                     </h5>
                   </div>
-                  <p class="lead" style="font-size:13px;">
-                    I am Abishek Shyamsunder a student at SSN college of engineering, currently completing my specialisation in Computer Science. My holistic skillset with my forte of programming and a natural disposition at mathematics and logic, helped me become a researcher at IIT-M in the Shakti Lab.
+                  <p class="lead" style="font-size:16px;">
+                    I am Abishek Shyamsunder a Master's student at NYU Courant, specialisation in Computer and Information Sciences.
                   </p>
-                  <p class="lead" style="font-size:13px;">
+                  <p class="lead" style="font-size:16px;">
                     Fuelled by my passion to understand the nuances in everything that I do, I consider myself a perennial learner, with a drive to build on my humble foundations. I am passionate about Data Science and Machine Learning, and believe that the satisfaction one gets when building a machine that thinks on its own, is unparalleled.
                   </p>
-                  <p class="lead" style="font-size:13px;">
-                    Building a tool that performs opcode fusion at the assembly level, a system that performs Emperical Test Case Generation using NLP and a system that tracks a ball through a series of frames, given a video source are some of the projects that I take most pride in.
-
-                    I am very particular about maintaining a balance with my professional and personal life. I love driving, reading books, going on long walks with my dog and cooking(because I love eating ;p).
+                  <p class="lead" style="font-size:16px;">
+                    Building a tool that generates random assembly level programs for code level verification, a system that performs Emperical Test Case Generation using NLP and a system that calculates coverage of tests based on programs generated are some of the projects that I take most pride in.
                   </p>
-                  <p class="lead" style="font-size:13px;">
-                    In addition to my job, I am a freelance buisness analyst. I provide detailed multidimensional insights to buisnesses, and give recommendations on new propositions.   
-                    I hope to do my masters in Data Analytics at a premier institution in the near Future!
+                  <p class="lead" style="font-size:16px;">
+                    I am very particular about maintaining a balance with my professional and personal life. I love driving, reading books, going on long walks with my dog and cooking(because I love eating ;p).
                   </p>
                 </div>
               </div>
@@ -163,6 +167,7 @@
       </div>
     </div>
   </section>
+
 
   <!--/ Section Services Star /-->
   <section id="projects" class="services-mf route">
@@ -181,8 +186,22 @@
         </div>
       </div>
       <div class="row">
+
+        <div class="col-md-3" onclick="window.location='https://gitlab.com/shaktiproject/tools/rita/-/tree/master/rita/pprocs';">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Arbitrary Program Generator</h2>
+              <p class="s-description text-center">
+                Tool used for code level verification of RISCV Chips. Generates a random assembly level program based on a configuration file provided by the user, to check for bugs in the design.
+              </p>
+            </div>
+          </div>
+        </div>
         
-        <div class="col-md-4" onclick="window.location='https://gitlab.com/shaktiproject/tools/rita/-/tree/master/rita/pprocs';">
+        <div class="col-md-3" onclick="window.location='https://gitlab.com/shaktiproject/tools/rita/-/tree/master/rita/pprocs';">
           <div class="service-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
@@ -196,7 +215,7 @@
           </div>
         </div>
         
-        <div class="col-md-4" onclick="window.location='https://github.com/abishekshyamsunder/FYP';">
+        <div class="col-md-3" onclick="window.location='https://www.springerprofessional.de/en/empirical-test-design-strategies-using-natural-language-processi/18414188';">
           <div class="service-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-code-working"></i></span>
@@ -204,13 +223,13 @@
             <div class="service-content">
               <h2 class="s-title">Test Case Generation</h2>
               <p class="s-description text-center">
-                Built to identify similar issues submitted by previous users, identify requirement not satisfied by submitted issues and generate random testcases for functional requirements
+                Built to identify similar issues submitted by previous users, identify requirement not satisfied by submitted issues and generate random testcases for functional requirements. Uses NLP, NLU and a SMT Solver
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4" onclick="window.location='https://github.com/abishekshyamsunder/data_visualisation';">
+        <div class="col-md-3" onclick="window.location='https://github.com/abishekshyamsunder/data_visualisation';">
           <div class="service-box">
             <div class="service-ico">
               <span class="ico-circle"><i class="ion-stats-bars"></i></span>
@@ -218,7 +237,7 @@
             <div class="service-content">
               <h2 class="s-title">Data Analytics and Visualization</h2>
               <p class="s-description text-center">
-                Contains the analysis of Ford Go Bike systems data, around the San Fransisco Bay area. Provides insights into the data  in the form of html slides.
+                Contains the analysis of Ford Go Bike systems data, around the San Fransisco Bay area. Provides insights into the data  in the form of html slides. Uses Jupyter Notebooks for analysis and visualisation.
               </p>
             </div>
           </div>
@@ -451,9 +470,8 @@
   <!--/ Section Portfolio End /-->
 
 
-
   <!--/ Section Blog Star /-->
-  <!--
+  
   <section id="blog" class="blog-mf sect-pt4 route">
     <div class="container">
       <div class="row">
@@ -473,17 +491,17 @@
         <div class="col-md-6">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.html"><img src="img/road_blog1.jpeg" alt="" class="img-fluid"></a>
+              <a href="blog-single.html"><img src="img/pivot_table2.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 <div class="card-category">
-                  <h6 class="category">Education</h6>
+                  <h6 class="category">Data Science</h6>
                 </div>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">Road to being a Data Scientist</a></h3>
+              <h3 class="card-title"><a href="https://medium.com/analytics-vidhya/pivot-tables-made-simple-with-atoti-621b289e5f31">Pivot Tables made simple With Atoti</a></h3>
               <p class="card-description">
-                Want to be a Data Scientist? Here is the road map I followed!, Jump right in!
+                Read about the powerful tool that I use in my Analytics Projects! From pivot tables, Graphs, Interactive UIs, to a complete dashboard!
               </p>
             </div>
             <div class="card-footer">
@@ -502,17 +520,17 @@
         <div class="col-md-6">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.html"><img src="img/car_blog2_2.jpg" alt="" class="img-fluid"></a>
+              <a href="blog-single.html"><img src="img/WebTree.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 <div class="card-category">
-                  <h6 class="category">Cars</h6>
+                  <h6 class="category">Python & HTML</h6>
                 </div>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">Car buying trends in India</a></h3>
+              <h3 class="card-title"><a href="https://medium.com/analytics-vidhya/visualise-webpages-like-never-before-with-webtree-739fa817fc94">Visualising Webpages using WebTree</a></h3>
               <p class="card-description">
-                Want to understand what the Indian market looks for in cars?, This is a must read!
+                Developing in HTML. Use this Python based tool that I developed to understand the page's structure
               </p>
             </div>
             <div class="card-footer">
@@ -523,7 +541,7 @@
                 </a>
               </div>
               <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
+                <span class="ion-ios-clock-outline"></span> 5 min
               </div>
             </div>
           </div>
@@ -531,9 +549,8 @@
       </div>
     </div>
   </section>
-  -->
+  
   <!--/ Section Blog End /-->
-
     <!--/ Section Testimonials Start /-->
   <br>
   <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
@@ -618,6 +635,8 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 </html>
